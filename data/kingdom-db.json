@@ -1,0 +1,452 @@
+{
+  "users": [
+    {
+      "id": "usr_student_1",
+      "username": "pelajar1",
+      "fullName": "Nurul Aisyah binti Razak",
+      "role": "student",
+      "className": "5 Bestari",
+      "passwordHash": "57d98587c037392c3153292272748beba957138ac6e4e43941de59cd53977547b68445eed21fbc1cba69b623a80989b4d22e2f1592d9bac28c1b0c768e92e937",
+      "passwordSalt": "8359e93ec897eef0fb466be3aeac4f0a",
+      "createdAt": "2026-11-17T13:58:47.951Z",
+      "lastLoginAt": "2026-11-19T14:52:01.943Z",
+      "loginCount": 2
+    },
+    {
+      "id": "usr_student_2",
+      "username": "pelajar2",
+      "fullName": "Muhammad Danish bin Hakim",
+      "role": "student",
+      "className": "5 Bestari",
+      "passwordHash": "19b2749ac6f79304a367e5465e6abdb870f742b02dbae53a8b6db770e272a505d155ab6d7855be4f4c34649635e7b2071f89069c51822c7b0dddd1eb106fd9c9",
+      "passwordSalt": "ba9e094b0e16a87a133c6fc8e60ef16b",
+      "createdAt": "2026-11-17T13:58:47.951Z"
+    },
+    {
+      "id": "usr_teacher_1",
+      "username": "guru1",
+      "fullName": "Cikgu Farah Wahida binti Ismail",
+      "role": "teacher",
+      "className": "5 Bestari",
+      "passwordHash": "4e754f472f2b52e60d9fe6fbe9833fefeda1a281220954b74f7151d559b3bfca86b7d440946457d4defd55e7fb2e0e3a601416e42764b368e51b2edb89816358",
+      "passwordSalt": "0d133f9dd8ad26c7b9aa901c9864cde7",
+      "createdAt": "2026-11-17T13:58:47.951Z",
+      "lastLoginAt": "2026-11-19T14:52:16.291Z",
+      "loginCount": 4
+    },
+    {
+      "id": "usr_admin_1",
+      "username": "admin1",
+      "fullName": "Pentadbir Sistem Diraja",
+      "role": "admin",
+      "passwordHash": "16964bf91af620fd73a7979bc10d56989e2f01e390b56d570d906afd2b27e9f346e9747fa0c6a6374f802211d2aefc52533fe9b0841f033f6225d1d506b2e79e",
+      "passwordSalt": "332a88ff23100b8da0d24b58e1e4ccde",
+      "createdAt": "2026-11-17T13:58:47.951Z",
+      "lastLoginAt": "2026-11-19T14:51:41.720Z",
+      "loginCount": 2
+    }
+  ],
+  "progressByUserId": {
+    "usr_student_1": {
+      "userId": "usr_student_1",
+      "studentName": "Nurul Aisyah binti Razak",
+      "className": "5 Bestari",
+      "selectedHero": "elena",
+      "learningMode": "individual",
+      "currentLocation": "citadel",
+      "unlockedLocations": [
+        "citadel",
+        "library",
+        "woods",
+        "atelier",
+        "theatre",
+        "gate_hall"
+      ],
+      "completedMissions": [],
+      "collectedFragmentIds": [],
+      "discoveredClues": [],
+      "libraryScore": 0,
+      "libraryAttempts": 0,
+      "libraryCompleted": false,
+      "woodsOrderedIds": [
+        "frag-3",
+        "frag-1",
+        "frag-5",
+        "frag-2",
+        "frag-4"
+      ],
+      "woodsAttempts": 0,
+      "woodsCompleted": false,
+      "scriptPlan": {
+        "theme": "Pengembaraan, misteri, persahabatan, kebersihan, tanggungjawab dan kerjasama menjaga alam sekitar",
+        "characters": "Pencerita, Aiman (berani), Sofia (bijak & teliti), Danish (kreatif), dan Cikgu Hana",
+        "setting": "Taman sekolah pada waktu pagi yang cerah selepas waktu rehat serta di sekitar bangku lama dan kolam",
+        "beginning": "Aiman, Sofia dan Danish terkejut melihat taman sekolah layu, bersampah dan berkolam keruh, lalu menemui buku misteri \"Rahsia Taman Warisan\" di bawah bangku lama.",
+        "middle": "Mereka mengenal pasti tiga punca kerosakan dan dengan bimbingan Cikgu Hana melaksanakan gotong-royong mengasingkan sampah, menyusun jadual siraman, dan membersihkan saliran.",
+        "ending": "Taman sekolah kembali indah dan buku itu memancarkan cahaya keemasan dengan pesanan bahawa keindahan terpelihara melalui tanggungjawab dan kerjasama.",
+        "fullScript": "Pada suatu pagi yang cerah selepas waktu rehat, Aiman, Sofia dan Danish terkejut melihat taman sekolah mereka menjadi suram. Bunga-bunga layu, sampah bertaburan dan air kolam kelihatan keruh. Di bawah sebuah bangku lama, mereka menemui buku usang bersampul keemasan bertajuk \"Rahsia Taman Warisan\" yang memberi petunjuk tentang tiga punca kerosakan taman. Dengan bimbingan Cikgu Hana, mereka merancang misi gotong-royong bersama rakan-rakan. Aiman mengetuai pengasingan sampah, Sofia menyediakan jadual siraman tumbuhan, manakala Danish mengurus pembersihan saliran air bersama guru dan pekerja sekolah. Beberapa minggu kemudian, taman kembali berseri dan buku itu bercahaya dengan pesanan: keindahan terpelihara melalui tanggungjawab dan kerjasama.",
+        "storyboard": [
+          {
+            "id": "sb-1",
+            "stage": "Permulaan",
+            "title": "Babak 1 · Misteri Di Sebalik Taman",
+            "visualDescription": "Aiman, Sofia dan Danish di taman sekolah yang layu dan bersampah, lalu menemui buku \"Rahsia Taman Warisan\" di bawah bangku lama.",
+            "narrationCue": "Mulakan dengan suasana pagi yang tenang, diikuti nada hairan apabila melihat keadaan taman.",
+            "mood": "Misteri dan ingin tahu"
+          },
+          {
+            "id": "sb-2",
+            "stage": "Permulaan",
+            "title": "Babak 2 · Petunjuk Yang Tersembunyi",
+            "visualDescription": "Sofia membaca tulisan bercahaya di dalam buku sementara Cikgu Hana membimbing mereka mengenal pasti tiga punca kerosakan.",
+            "narrationCue": "Tekankan dialog penemuan tiga masalah dengan jelas dan teratur.",
+            "mood": "Penuh kesungguhan"
+          },
+          {
+            "id": "sb-3",
+            "stage": "Pertengahan",
+            "title": "Babak 3 · Misi Menyelamatkan Taman",
+            "visualDescription": "Aktiviti gotong-royong mengasingkan sampah, jadual siraman Sofia, dan pembersihan saliran oleh Danish bersama pekerja sekolah.",
+            "narrationCue": "Gunakan nada bersemangat dan ceria mengiringi rentak kerja berpasukan.",
+            "mood": "Bersemangat dan sepakat"
+          },
+          {
+            "id": "sb-4",
+            "stage": "Pengakhiran",
+            "title": "Babak 4 · Keajaiban Sebuah Kerjasama",
+            "visualDescription": "Taman kembali mekar dengan kolam jernih manakala buku keemasan memancarkan pesanan tentang tanggungjawab dan kerjasama.",
+            "narrationCue": "Akhiri dengan intonasi hangat, bangga dan jelas pada mesej penutup.",
+            "mood": "Ceria, bangga dan menginspirasikan"
+          }
+        ]
+      },
+      "atelierCompleted": false,
+      "voiceAttempts": [],
+      "voiceCompleted": false,
+      "theatreCompleted": false,
+      "achievements": [
+        {
+          "id": "ach_first_step",
+          "title": "Langkah Pertama Di Kota",
+          "description": "Berjaya memilih wira dan memulakan pengembaraan di Kota Diraja.",
+          "category": "Penerokaan",
+          "unlockedAt": "2026-11-17T13:58:48.226Z"
+        },
+        {
+          "id": "ach_silent_chronicle",
+          "title": "Penyingkap Hikayat Membisu",
+          "description": "Menyelesaikan misi kefahaman \"Misi Menyelamatkan Taman Sekolah\" di Perpustakaan Terselubung.",
+          "category": "Pencapaian",
+          "unlockedAt": "2026-11-18T14:22:33.838Z"
+        },
+        {
+          "id": "ach_explorer_woods",
+          "title": "Pencari Serpihan Rimba",
+          "description": "Menemui semua 5 serpihan kisah yang tersembunyi di Hutan Berbisik.",
+          "category": "Penerokaan"
+        },
+        {
+          "id": "ach_timeline_master",
+          "title": "Penjaga Garis Masa",
+          "description": "Menyusun kronologi peristiwa cerita dari permulaan hingga penutup.",
+          "category": "Pencapaian",
+          "unlockedAt": "2026-11-18T14:22:33.838Z"
+        },
+        {
+          "id": "ach_story_architect",
+          "title": "Arkitek Kisah Diraja",
+          "description": "Menghasilkan rancangan penceritaan, papan cerita dan menyemak skrip bersama Mentor Bahasa AI.",
+          "category": "Kreativiti",
+          "unlockedAt": "2026-11-18T14:22:33.831Z"
+        },
+        {
+          "id": "ach_voice_effort",
+          "title": "Suara Yang Berani",
+          "description": "Merakam cubaan pertama penceritaan lisan di Balai Gema Diraja.",
+          "category": "Usaha",
+          "unlockedAt": "2026-11-19T08:55:34.611Z"
+        },
+        {
+          "id": "ach_voice_improved",
+          "title": "Bintang Peningkatan Lisan",
+          "description": "Merakam cubaan kedua dan menunjukkan kesungguhan memperbaiki penyampaian suara.",
+          "category": "Peningkatan"
+        },
+        {
+          "id": "ach_collaborator",
+          "title": "Sahabat Sepakat",
+          "description": "Menyertai Bilik Kolaborasi untuk berkongsi petunjuk dan membina kisah bersama rakan.",
+          "category": "Kolaborasi"
+        },
+        {
+          "id": "ach_final_festival",
+          "title": "Pewaris Cahaya Diraja",
+          "description": "Mempersembahkan video penceritaan akhir di Balairung Gemilang Diraja dan memulihkan kerajaan.",
+          "category": "Pencapaian",
+          "unlockedAt": "2026-11-18T14:22:33.838Z"
+        }
+      ],
+      "adaptiveLevel": "Standard",
+      "festivalUnlocked": false,
+      "updatedAt": "2026-11-19T08:55:34.705Z"
+    },
+    "usr_student_2": {
+      "userId": "usr_student_2",
+      "studentName": "Muhammad Danish bin Hakim",
+      "className": "5 Bestari",
+      "selectedHero": "elena",
+      "learningMode": "individual",
+      "currentLocation": "citadel",
+      "unlockedLocations": [
+        "citadel",
+        "library",
+        "woods",
+        "atelier",
+        "theatre",
+        "gate_hall"
+      ],
+      "completedMissions": [
+        "silent_chronicle"
+      ],
+      "collectedFragmentIds": [],
+      "discoveredClues": [],
+      "libraryScore": 5,
+      "libraryAttempts": 0,
+      "libraryCompleted": true,
+      "woodsOrderedIds": [
+        "frag-3",
+        "frag-1",
+        "frag-5",
+        "frag-2",
+        "frag-4"
+      ],
+      "woodsAttempts": 0,
+      "woodsCompleted": false,
+      "scriptPlan": {
+        "theme": "Pengembaraan, misteri, persahabatan, kebersihan, tanggungjawab dan kerjasama menjaga alam sekitar",
+        "characters": "Pencerita, Aiman (berani), Sofia (bijak & teliti), Danish (kreatif), dan Cikgu Hana",
+        "setting": "Taman sekolah pada waktu pagi yang cerah selepas waktu rehat serta di sekitar bangku lama dan kolam",
+        "beginning": "Aiman, Sofia dan Danish terkejut melihat taman sekolah layu, bersampah dan berkolam keruh, lalu menemui buku misteri \"Rahsia Taman Warisan\" di bawah bangku lama.",
+        "middle": "Mereka mengenal pasti tiga punca kerosakan dan dengan bimbingan Cikgu Hana melaksanakan gotong-royong mengasingkan sampah, menyusun jadual siraman, dan membersihkan saliran.",
+        "ending": "Taman sekolah kembali indah dan buku itu memancarkan cahaya keemasan dengan pesanan bahawa keindahan terpelihara melalui tanggungjawab dan kerjasama.",
+        "fullScript": "Pada suatu pagi yang cerah selepas waktu rehat, Aiman, Sofia dan Danish terkejut melihat taman sekolah mereka menjadi suram. Bunga-bunga layu, sampah bertaburan dan air kolam kelihatan keruh. Di bawah sebuah bangku lama, mereka menemui buku usang bersampul keemasan bertajuk \"Rahsia Taman Warisan\" yang memberi petunjuk tentang tiga punca kerosakan taman. Dengan bimbingan Cikgu Hana, mereka merancang misi gotong-royong bersama rakan-rakan. Aiman mengetuai pengasingan sampah, Sofia menyediakan jadual siraman tumbuhan, manakala Danish mengurus pembersihan saliran air bersama guru dan pekerja sekolah. Beberapa minggu kemudian, taman kembali berseri dan buku itu bercahaya dengan pesanan: keindahan terpelihara melalui tanggungjawab dan kerjasama.",
+        "storyboard": [
+          {
+            "id": "sb-1",
+            "stage": "Permulaan",
+            "title": "Babak 1 · Misteri Di Sebalik Taman",
+            "visualDescription": "Aiman, Sofia dan Danish di taman sekolah yang layu dan bersampah, lalu menemui buku \"Rahsia Taman Warisan\" di bawah bangku lama.",
+            "narrationCue": "Mulakan dengan suasana pagi yang tenang, diikuti nada hairan apabila melihat keadaan taman.",
+            "mood": "Misteri dan ingin tahu"
+          },
+          {
+            "id": "sb-2",
+            "stage": "Permulaan",
+            "title": "Babak 2 · Petunjuk Yang Tersembunyi",
+            "visualDescription": "Sofia membaca tulisan bercahaya di dalam buku sementara Cikgu Hana membimbing mereka mengenal pasti tiga punca kerosakan.",
+            "narrationCue": "Tekankan dialog penemuan tiga masalah dengan jelas dan teratur.",
+            "mood": "Penuh kesungguhan"
+          },
+          {
+            "id": "sb-3",
+            "stage": "Pertengahan",
+            "title": "Babak 3 · Misi Menyelamatkan Taman",
+            "visualDescription": "Aktiviti gotong-royong mengasingkan sampah, jadual siraman Sofia, dan pembersihan saliran oleh Danish bersama pekerja sekolah.",
+            "narrationCue": "Gunakan nada bersemangat dan ceria mengiringi rentak kerja berpasukan.",
+            "mood": "Bersemangat dan sepakat"
+          },
+          {
+            "id": "sb-4",
+            "stage": "Pengakhiran",
+            "title": "Babak 4 · Keajaiban Sebuah Kerjasama",
+            "visualDescription": "Taman kembali mekar dengan kolam jernih manakala buku keemasan memancarkan pesanan tentang tanggungjawab dan kerjasama.",
+            "narrationCue": "Akhiri dengan intonasi hangat, bangga dan jelas pada mesej penutup.",
+            "mood": "Ceria, bangga dan menginspirasikan"
+          }
+        ]
+      },
+      "atelierCompleted": false,
+      "voiceAttempts": [],
+      "voiceCompleted": false,
+      "theatreCompleted": false,
+      "achievements": [
+        {
+          "id": "ach_first_step",
+          "title": "Langkah Pertama Di Kota",
+          "description": "Berjaya memilih wira dan memulakan pengembaraan di Kota Diraja.",
+          "category": "Penerokaan",
+          "unlockedAt": "2026-11-17T13:58:48.226Z"
+        },
+        {
+          "id": "ach_silent_chronicle",
+          "title": "Penyingkap Hikayat Membisu",
+          "description": "Menyelesaikan misi kefahaman \"Misi Menyelamatkan Taman Sekolah\" di Perpustakaan Terselubung.",
+          "category": "Pencapaian",
+          "unlockedAt": "2026-11-17T13:58:47.951Z"
+        },
+        {
+          "id": "ach_explorer_woods",
+          "title": "Pencari Serpihan Rimba",
+          "description": "Menemui semua 5 serpihan kisah yang tersembunyi di Hutan Berbisik.",
+          "category": "Penerokaan"
+        },
+        {
+          "id": "ach_timeline_master",
+          "title": "Penjaga Garis Masa",
+          "description": "Menyusun kronologi peristiwa cerita dari permulaan hingga penutup.",
+          "category": "Pencapaian"
+        },
+        {
+          "id": "ach_story_architect",
+          "title": "Arkitek Kisah Diraja",
+          "description": "Menghasilkan rancangan penceritaan, papan cerita dan menyemak skrip bersama Mentor Bahasa AI.",
+          "category": "Kreativiti"
+        },
+        {
+          "id": "ach_voice_effort",
+          "title": "Suara Yang Berani",
+          "description": "Merakam cubaan pertama penceritaan lisan di Balai Gema Diraja.",
+          "category": "Usaha"
+        },
+        {
+          "id": "ach_voice_improved",
+          "title": "Bintang Peningkatan Lisan",
+          "description": "Merakam cubaan kedua dan menunjukkan kesungguhan memperbaiki penyampaian suara.",
+          "category": "Peningkatan"
+        },
+        {
+          "id": "ach_collaborator",
+          "title": "Sahabat Sepakat",
+          "description": "Menyertai Bilik Kolaborasi untuk berkongsi petunjuk dan membina kisah bersama rakan.",
+          "category": "Kolaborasi"
+        },
+        {
+          "id": "ach_final_festival",
+          "title": "Pewaris Cahaya Diraja",
+          "description": "Mempersembahkan video penceritaan akhir di Balairung Gemilang Diraja dan memulihkan kerajaan.",
+          "category": "Pencapaian"
+        }
+      ],
+      "adaptiveLevel": "Standard",
+      "festivalUnlocked": false,
+      "updatedAt": "2026-11-17T13:58:48.226Z"
+    }
+  },
+  "mediaById": {},
+  "collabRooms": {
+    "TAMAN-01": {
+      "code": "TAMAN-01",
+      "title": "Pasukan Harmoni 5 Bestari",
+      "members": [
+        "Nurul Aisyah binti Razak",
+        "Muhammad Danish bin Hakim"
+      ],
+      "sharedClues": [
+        "Watak utama kisah ialah Aiman, Sofia, Danish dan Cikgu Hana, serta buku misteri \"Rahsia Taman Warisan\"."
+      ],
+      "sharedFragmentNotes": {
+        "frag-1": "Berlaku selepas waktu rehat; bunga layu, sampah bertaburan dan air kolam keruh."
+      },
+      "sharedScriptDraft": "Pada suatu pagi yang cerah, Aiman, Sofia dan Danish menuju ke taman sekolah dan menemui buku misteri \"Rahsia Taman Warisan\" yang mendedahkan tiga punca kerosakan taman.",
+      "messages": [
+        {
+          "id": "msg-seed-1",
+          "authorName": "Muhammad Danish bin Hakim",
+          "heroId": "elena",
+          "text": "Saya telah meneliti manuskrip di Perpustakaan Terselubung. Tiga punca kerosakan ialah sampah merata-rata, pokok tidak disiram dan saliran air tersumbat!",
+          "createdAt": "2026-11-17T13:58:47.951Z"
+        }
+      ],
+      "updatedAt": "2026-11-17T13:58:47.951Z"
+    }
+  },
+  "adminConfig": {
+    "projectTitle": "Kingdom of Stories: The Veil of Forgotten Chronicles",
+    "storyTitle": "Misi Menyelamatkan Taman Sekolah",
+    "openingNarration": "Di sebuah kerajaan yang dibina atas ribuan kisah, sejarah bukan sekadar catatan. Setiap helaian menyimpan kenangan, perjuangan dan warisan yang diperturunkan dari satu generasi ke generasi seterusnya.",
+    "enableCollaborativeMode": true,
+    "enableAdaptiveHints": true,
+    "announcement": "Selamat datang ke tugasan penceritaan digital: Misi Menyelamatkan Taman Sekolah. Lengkapkan kelima-lima misi untuk menyalakan semula Festival Cahaya Diraja.",
+    "updatedAt": "2026-11-17T13:58:47.951Z"
+  },
+  "loginLogs": [
+    {
+      "id": "log_ef424dc29c31",
+      "userId": "usr_teacher_1",
+      "username": "guru1",
+      "fullName": "Cikgu Farah Wahida binti Ismail",
+      "role": "teacher",
+      "className": "5 Bestari",
+      "action": "login",
+      "loginAt": "2026-11-19T14:51:17.362Z"
+    },
+    {
+      "id": "log_3dde8085d8c5",
+      "userId": "usr_admin_1",
+      "username": "admin1",
+      "fullName": "Pentadbir Sistem Diraja",
+      "role": "admin",
+      "action": "login",
+      "loginAt": "2026-11-19T14:51:17.426Z"
+    },
+    {
+      "id": "log_c1af3e8d8e33",
+      "userId": "usr_student_1",
+      "username": "pelajar1",
+      "fullName": "Nurul Aisyah binti Razak",
+      "role": "student",
+      "className": "5 Bestari",
+      "action": "login",
+      "loginAt": "2026-11-19T14:51:41.585Z"
+    },
+    {
+      "id": "log_09b108228f65",
+      "userId": "usr_teacher_1",
+      "username": "guru1",
+      "fullName": "Cikgu Farah Wahida binti Ismail",
+      "role": "teacher",
+      "className": "5 Bestari",
+      "action": "login",
+      "loginAt": "2026-11-19T14:51:41.648Z"
+    },
+    {
+      "id": "log_1a300ee9f397",
+      "userId": "usr_admin_1",
+      "username": "admin1",
+      "fullName": "Pentadbir Sistem Diraja",
+      "role": "admin",
+      "action": "login",
+      "loginAt": "2026-11-19T14:51:41.720Z"
+    },
+    {
+      "id": "log_5119889efdcb",
+      "userId": "usr_teacher_1",
+      "username": "guru1",
+      "fullName": "Cikgu Farah Wahida binti Ismail",
+      "role": "teacher",
+      "className": "5 Bestari",
+      "action": "login",
+      "loginAt": "2026-11-19T14:52:01.873Z"
+    },
+    {
+      "id": "log_c9dc7a037fd7",
+      "userId": "usr_student_1",
+      "username": "pelajar1",
+      "fullName": "Nurul Aisyah binti Razak",
+      "role": "student",
+      "className": "5 Bestari",
+      "action": "login",
+      "loginAt": "2026-11-19T14:52:01.943Z"
+    },
+    {
+      "id": "log_18237c6530c0",
+      "userId": "usr_teacher_1",
+      "username": "guru1",
+      "fullName": "Cikgu Farah Wahida binti Ismail",
+      "role": "teacher",
+      "className": "5 Bestari",
+      "action": "login",
+      "loginAt": "2026-11-19T14:52:16.291Z"
+    }
+  ]
+}

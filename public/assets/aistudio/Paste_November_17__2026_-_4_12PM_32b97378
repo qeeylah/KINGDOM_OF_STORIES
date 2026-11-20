@@ -1,0 +1,1020 @@
+# MASTER DEVELOPMENT PROMPT: KINGDOM OF STORIES
+## The Veil of Forgotten Chronicles
+
+Act as a senior 3D game developer, creative director, UI/UX designer, educational game designer, narrative designer, and full-stack web developer.
+
+Your task is to design and develop a high-quality, fully playable, browser-based 3D educational adventure game titled **KINGDOM OF STORIES: The Veil of Forgotten Chronicles**.
+
+This project is an interactive Digital Learning Object (DLO) developed for a teacher education assignment. It must combine immersive 3D gameplay, mystery storytelling, gamification, Project-Based Learning (PBL), authentic learning, collaborative learning, and adaptive learning.
+
+**MOST IMPORTANT REQUIREMENT: THIS MUST BE A REAL, PLAYABLE 3D GAME.**
+
+Do not create a static 3D illustration, slideshow, animated presentation, dashboard disguised as a game, or a website that only changes background images when users click buttons.
+
+The player must be able to control a 3D character, explore actual 3D environments, walk and run through the world, interact with objects and NPCs, complete missions, collect items, and physically teleport through portals into separate 3D environments.
+
+The final product must prioritize premium visual quality and immersive gameplay while maintaining functional, responsive, and reliable game mechanics.
+
+---
+
+# 1. DEVELOPMENT PLATFORM AND TECHNICAL DIRECTION
+
+Develop the game as a browser-based web application that runs on modern desktop browsers.
+
+Recommended technical direction:
+- React for application structure and interface.
+- Three.js or React Three Fiber for actual 3D rendering and gameplay.
+- WebGL for real-time 3D environments.
+- GLTF/GLB models for characters, architecture, objects, and environmental assets.
+- AnimationMixer or an equivalent animation system for character and environmental animations.
+- A suitable audio system for dialogue, narration, music, and sound effects.
+- A persistent data architecture for player progress, mission completion, and achievements.
+
+Technical requirements:
+1. The game must run directly in a web browser without requiring users to install a separate game application.
+2. Build actual 3D scenes rather than static rendered backgrounds.
+3. Implement real character movement, collision detection, camera following, interaction systems, mission states, and scene transitions.
+4. Use optimized 3D assets, lighting, textures, and effects to maintain smooth performance.
+5. Support desktop controls first, while designing the interface to be adaptable to mobile devices.
+6. Do not use fake buttons or non-functional interface elements.
+7. Do not claim a feature is implemented unless it actually works.
+8. If an external API, backend, asset, or service is required, clearly identify the dependency and provide a working integration structure or an honest fallback.
+
+Build the game using a modular architecture so that new missions, locations, characters, and learning activities can be added without rebuilding the entire project.
+
+---
+
+# 2. GAME IDENTITY AND VISUAL DIRECTION
+
+Game title: **KINGDOM OF STORIES**
+
+Subtitle: **The Veil of Forgotten Chronicles**
+
+Genre:
+- 3D Fantasy Adventure
+- Mystery Exploration
+- Educational Role-Playing Game
+- Mission-Based Gamification
+
+Visual direction:
+
+Create a premium-quality, stylized 3D fantasy RPG world.
+
+The visual quality should resemble a polished fantasy adventure game, with:
+- Detailed royal architecture.
+- Beautifully designed fantasy landscapes.
+- Consistent and expressive 3D character models.
+- Smooth character animations.
+- Cinematic camera movements.
+- Dynamic lighting and shadows.
+- Magical particles and glowing effects.
+- Atmospheric environmental animation.
+- Detailed interactive objects.
+- Beautifully designed portals.
+- Professional game-style user interfaces.
+
+Colour palette:
+- Pastel lavender and lilac.
+- Warm cream and ivory.
+- Pastel blue.
+- Sage green.
+- Antique gold.
+- Midnight navy as a contrasting accent.
+
+Avoid:
+- Cheap-looking cartoon graphics.
+- Flat 2D backgrounds pretending to be 3D.
+- Poorly proportioned characters.
+- Inconsistent character designs.
+- Excessively dark environments.
+- Cluttered interfaces.
+- Generic school dashboard designs.
+
+The game should feel magical, mysterious, elegant, immersive, and visually cohesive.
+
+The interface must resemble a premium fantasy RPG game, not an ordinary educational website.
+
+---
+
+# 3. MAIN STORYLINE AND OPENING CINEMATIC
+
+The game takes place in a magical kingdom where stories preserve the memories, history, knowledge, and identity of its people.
+
+However, on the night of the Royal Festival of Light, a mysterious incident occurs.
+
+The Royal Chronicles suddenly lose their pages.
+
+The kingdom begins to change:
+- The royal clock tower stops.
+- Historical paintings lose their colours.
+- Books in the royal library become blank.
+- The inhabitants begin forgetting the stories they once knew.
+- The magical connection between the kingdom's locations becomes unstable.
+
+Four young heroes are selected to investigate the mystery and recover the missing chronicles.
+
+The player must explore the kingdom, discover clues, complete missions, restore the missing story fragments, and uncover the truth behind the disappearance.
+
+The story must create curiosity and suspense throughout the game.
+
+## Opening cinematic
+
+Before gameplay begins, display a short cinematic introduction.
+
+Show:
+1. A beautiful kingdom at night.
+2. The Royal Festival of Light.
+3. The royal clock suddenly stopping.
+4. Books becoming blank.
+5. Historical paintings losing their colours.
+6. Pages disappearing into magical particles.
+7. Four heroes being summoned to the Royal Citadel.
+
+Use cinematic transitions, environmental sound effects, atmospheric music, and a professional narrator.
+
+The opening narration must use clear, natural Bahasa Melayu Malaysia.
+
+Suggested narration:
+
+"Di sebuah kerajaan yang dibina atas ribuan kisah, sejarah bukan sekadar catatan. Setiap helaian menyimpan kenangan, perjuangan dan warisan yang diwariskan dari satu generasi ke generasi seterusnya.
+
+Namun, pada malam Festival Cahaya Diraja, sesuatu yang aneh telah berlaku.
+
+Jam menara istana terhenti. Lukisan sejarah kehilangan warnanya. Buku-buku di perpustakaan menjadi kosong. Penduduk kerajaan mula melupakan kisah yang pernah mereka kenali.
+
+Kini, empat wira telah dipilih untuk membongkar rahsia yang tersembunyi.
+
+Adakah mereka mampu menemukan kebenaran sebelum seluruh sejarah kerajaan lenyap?
+
+Selamat datang ke Kingdom of Stories."
+
+The opening cinematic must be skippable and replayable.
+
+---
+
+# 4. FOUR PLAYABLE HEROES
+
+Create four distinct, fully modelled 3D playable characters.
+
+Each character must have:
+- A consistent character model.
+- Idle animation.
+- Walking animation.
+- Running animation.
+- Turning animation.
+- Interaction animation.
+- Jumping animation where appropriate.
+- Victory animation.
+- Expressive facial features.
+- Distinctive clothing and accessories.
+
+Characters:
+
+### AYDEN — Royal Explorer
+Role: Exploration and discovery.
+
+Personality:
+- Brave.
+- Curious.
+- Adventurous.
+
+Special ability:
+- Discovers hidden objects, secret paths, and concealed story fragments.
+
+### ELENA — Royal Scholar
+Role: Knowledge and interpretation.
+
+Personality:
+- Intelligent.
+- Observant.
+- Thoughtful.
+
+Special ability:
+- Interprets manuscripts, examines clues, and solves knowledge-based puzzles.
+
+### RYAN — Royal Inventor
+Role: Mechanisms and problem-solving.
+
+Personality:
+- Creative.
+- Resourceful.
+- Innovative.
+
+Special ability:
+- Activates magical mechanisms, repairs devices, and solves interactive environmental puzzles.
+
+### EVA — Royal Storyteller
+Role: Communication and storytelling.
+
+Personality:
+- Expressive.
+- Confident.
+- Imaginative.
+
+Special ability:
+- Communicates with NPCs, interprets messages, and unlocks story-related interactions.
+
+Allow players to choose one of the four heroes before beginning the adventure.
+
+Character abilities should provide different gameplay approaches without preventing any player from completing the required learning objectives.
+
+Allow character selection to be changed when appropriate.
+
+---
+
+# 5. REAL 3D CHARACTER GAMEPLAY
+
+This section is a critical requirement.
+
+The game must include an actual controllable 3D character inside a real-time 3D environment.
+
+## Desktop controls
+
+- W / A / S / D: Move the character.
+- Shift: Run.
+- Space: Jump where appropriate.
+- Mouse movement: Rotate the camera.
+- E: Interact with objects, NPCs, and portals.
+- Esc: Open the game menu.
+
+## Camera system
+
+Implement:
+- Third-person camera as the default.
+- Smooth camera follow.
+- Smooth camera rotation.
+- Camera zoom.
+- Collision-aware camera positioning.
+- Optional alternative camera perspectives where suitable.
+
+The camera must follow the selected character naturally while the player explores.
+
+## Character movement
+
+Implement:
+- Smooth directional movement.
+- Walking and running transitions.
+- Natural turning.
+- Character rotation according to movement direction.
+- Collision detection with buildings and environmental objects.
+- Ground detection.
+- Appropriate movement animations.
+
+The character must visibly move through the environment.
+
+Do not simulate movement by moving a background image.
+
+## Mobile adaptation
+
+If mobile support is enabled, include:
+- Virtual joystick.
+- Camera swipe control.
+- Interaction button.
+- Run and jump buttons where appropriate.
+
+---
+
+# 6. THE FIVE MAIN 3D LOCATIONS
+
+Build five separate, explorable 3D environments connected through the Royal Citadel.
+
+Each location must have its own architecture, lighting, atmosphere, soundscape, interactive objects, and mission activities.
+
+## LOCATION 1: ROYAL CITADEL
+### Starting hub
+
+This is the central area of the game.
+
+Include:
+- Grand royal castle.
+- Beautiful courtyard.
+- Magical fountain.
+- Royal gardens.
+- Clock tower.
+- Mission board.
+- Character selection area.
+- NPC characters.
+- Glowing magical portals.
+- World map.
+
+The player spawns here.
+
+Players can explore the courtyard, speak to NPCs, inspect clues, and access available locations.
+
+The Royal Guardian introduces the mission and explains the mystery.
+
+The Royal Citadel must function as a real 3D hub, not a static menu.
+
+## LOCATION 2: THE VEILED LIBRARY
+### Mission: THE SILENT CHRONICLE
+
+Visual environment:
+- Enormous magical library.
+- Floating books.
+- Tall bookshelves.
+- Glowing manuscripts.
+- Ancient reading tables.
+- Magical listening station.
+- Mysterious floating particles.
+
+Mission:
+
+The player must investigate an ancient manuscript and listen to the digital storytelling content titled:
+
+**"Misi Menyelamatkan Taman Sekolah"**
+
+This story must remain connected to the learning content developed in Assignment 2.
+
+Learning activities:
+1. Listen to the storytelling audio.
+2. Identify the characters.
+3. Identify the setting.
+4. Identify important events.
+5. Identify the main problem.
+6. Identify the solution.
+7. Interpret the message or moral.
+
+Use varied interactions such as:
+- Selecting and examining objects.
+- Listening to audio.
+- Interacting with the ancient manuscript.
+- Matching story elements.
+- Answering comprehension challenges.
+
+The player must physically explore the library to discover the mission objects.
+
+## LOCATION 3: THE WHISPERING WOODS
+### Mission: THE SHATTERED TIMELINE
+
+Visual environment:
+- Beautiful magical forest.
+- Giant ancient trees.
+- Glowing plants.
+- Floating story fragments.
+- Magical streams.
+- Hidden pathways.
+- Ancient stone structures.
+
+Mission:
+
+The missing pages have scattered throughout the forest.
+
+The player must find the story fragments and reconstruct the correct sequence of events from "Misi Menyelamatkan Taman Sekolah".
+
+Learning activities:
+1. Discover hidden story fragments.
+2. Collect important events.
+3. Arrange the events chronologically.
+4. Identify the beginning, middle, and ending.
+5. Establish relationships between events.
+
+Use:
+- Exploration.
+- Hidden-object discovery.
+- Drag-and-drop ordering.
+- Interactive puzzles.
+- Visual and audio clues.
+
+The forest should reward exploration and curiosity.
+
+## LOCATION 4: THE ARCANE ATELIER
+### Mission: THE STORY ARCHITECT
+
+Visual environment:
+- Magical creative workshop.
+- Floating writing desks.
+- Interactive storyboards.
+- Magical ink.
+- Script creation stations.
+- Digital recording studio.
+- Interactive creative tools.
+
+Mission:
+
+The player must become a Royal Story Architect and develop a structured storytelling plan.
+
+Learning activities:
+1. Identify the story theme.
+2. Plan the characters.
+3. Establish the setting.
+4. Organise the storyline.
+5. Develop the beginning, middle, and ending.
+6. Arrange events logically.
+7. Prepare the storytelling script.
+8. Develop a storyboard.
+
+Include an interactive writing station where students can write and edit their own scripts.
+
+Include a storyboard builder that allows students to arrange scenes and visual elements.
+
+## SPECIAL AREA: THE ROYAL VOICE CHAMBER
+Located within the Arcane Atelier.
+
+### Mission: THE ROYAL VOICE TRIAL
+
+This mission focuses on oral communication and storytelling delivery.
+
+Allow students to:
+1. Read or narrate their prepared storytelling script.
+2. Record their own voice using the browser microphone.
+3. Replay the recording.
+4. Review feedback.
+5. Improve their narration.
+6. Record a second attempt.
+
+The AI Mentor should provide meaningful feedback on:
+- Pronunciation.
+- Intonation.
+- Speaking pace.
+- Fluency.
+- Vocal expression.
+- Clarity.
+
+Only provide feedback that the implemented audio-analysis system can reasonably support.
+
+If advanced audio analysis requires an external AI API, clearly identify the required API and implement an integration-ready structure.
+
+Do not pretend that ordinary speech-to-text automatically evaluates pronunciation, intonation, and expression accurately.
+
+Students must be able to listen to their own recordings and compare their first and improved attempts.
+
+Provide recording controls:
+- Start recording.
+- Stop recording.
+- Play recording.
+- Replay recording.
+- Record again.
+
+Protect student recordings and do not make them publicly accessible.
+
+## LOCATION 5: THE GRAND ROYAL THEATRE
+### Mission: THE FINAL CHRONICLE
+
+Visual environment:
+- Magnificent royal theatre.
+- Grand stage.
+- Royal curtains.
+- Golden lighting.
+- Audience seating.
+- Magical stage decorations.
+- Cinematic presentation effects.
+
+Mission:
+
+The player must present the final digital storytelling video.
+
+The final product must remain connected to the Assignment 2 project:
+
+**"Misi Menyelamatkan Taman Sekolah"**
+
+Allow students to upload or select their completed 2–3 minute digital storytelling video.
+
+Include:
+- Video upload or selection.
+- Video preview.
+- Presentation mode.
+- Playback controls.
+- Final submission status.
+- Teacher feedback.
+
+The final presentation must take place on the actual 3D theatre stage.
+
+When the video begins, transition into an appropriate presentation view while retaining the theatre atmosphere.
+
+---
+
+# 7. PHYSICAL PORTAL AND TELEPORTATION SYSTEM
+
+This is another critical gameplay requirement.
+
+Create actual 3D magical portals inside the Royal Citadel.
+
+Each portal must:
+- Have a unique visual design.
+- Emit glowing magical light.
+- Include particle effects.
+- Have an interaction prompt.
+- React when the player approaches.
+- Trigger a transition when activated.
+
+Gameplay sequence:
+
+1. The player physically walks towards a portal.
+2. An interaction prompt appears: "Tekan E untuk memasuki lokasi".
+3. The player presses E.
+4. A magical teleportation animation begins.
+5. The screen transitions smoothly.
+6. The destination 3D environment loads.
+7. The character appears at the correct spawn location.
+8. The player can immediately continue exploring.
+
+The player must also be able to return through a return portal or designated exit.
+
+IMPORTANT:
+Teleportation must load or transition into an actual separate 3D environment.
+
+Do not simply replace a background image or display a location illustration.
+
+Implement:
+- Scene transitions.
+- Appropriate spawn points.
+- Player state persistence.
+- Mission progress persistence.
+- Portal unlocking conditions.
+- Return navigation.
+
+Create a world map showing the five major locations and their current unlock status.
+
+Use hybrid exploration:
+- Players may freely explore unlocked locations.
+- Some areas remain locked until mission requirements are completed.
+- Players can return to previously visited locations.
+
+---
+
+# 8. MISSION SYSTEM AND GAMIFICATION
+
+Create a complete mission progression system.
+
+Each mission must contain:
+- Mission introduction.
+- Clear objectives.
+- Interactive activities.
+- Progress indicators.
+- Feedback.
+- Rewards.
+- Completion animation.
+
+Mission progression:
+
+1. The Silent Chronicle.
+2. The Shattered Timeline.
+3. The Story Architect.
+4. The Royal Voice Trial.
+5. The Final Chronicle.
+
+Rewards:
+- Royal Story Fragments.
+- Achievement badges.
+- Mission completion rewards.
+- Exploration rewards.
+- Storytelling achievements.
+- Digital portfolio records.
+- Completion certificate.
+
+Do not reward students only for obtaining correct answers.
+
+Recognise:
+- Effort.
+- Improvement.
+- Exploration.
+- Creativity.
+- Collaboration.
+- Successful completion.
+- Quality of the final storytelling product.
+
+Use meaningful feedback instead of excessive punishment or repetitive failure screens.
+
+---
+
+# 9. ROYAL AI MENTOR
+
+Implement an AI-supported learning system called:
+
+**ROYAL AI MENTOR**
+
+This system must support learning throughout the game.
+
+It consists of four main functions.
+
+## A. AI Language Mentor
+
+Supports script development by identifying and explaining:
+- Spelling mistakes.
+- Grammar errors.
+- Sentence structure issues.
+- Vocabulary suitability.
+- Sentence clarity.
+- Language organisation.
+
+Provide constructive suggestions and allow students to revise their own writing.
+
+Do not automatically replace the student's entire script without explanation.
+
+## B. AI Speech Analyst
+
+Supports oral storytelling practice.
+
+Where a suitable audio-analysis service is connected, provide feedback on:
+- Pronunciation.
+- Intonation.
+- Speaking pace.
+- Fluency.
+- Clarity.
+- Expression.
+
+Make the difference between actual audio analysis and approximate feedback clear.
+
+## C. AI Improvement Tracker
+
+Allow students to compare their first and second attempts.
+
+Display meaningful improvements in a simple visual progress report.
+
+Focus on learning progress, not merely numerical scores.
+
+## D. Adaptive Learning
+
+Implement adaptive learning throughout the missions.
+
+Examples:
+- If a student struggles to identify story elements, provide additional hints.
+- If a student repeatedly struggles with sequencing, provide a simpler guided activity.
+- If a student performs well, introduce a more challenging activity.
+- If a student needs help with script organisation, provide a structured writing guide.
+- If a student needs more oral practice, provide additional opportunities to rehearse.
+
+Adaptive learning must support student development without making the game unnecessarily difficult.
+
+The teacher remains responsible for final educational assessment.
+
+---
+
+# 10. COLLABORATIVE AND INDIVIDUAL LEARNING
+
+Support both individual and collaborative gameplay.
+
+## Individual mode
+Students explore the kingdom independently and complete missions at their own pace.
+
+## Collaborative mode
+Allow students to work together where the technical architecture supports multiplayer interaction.
+
+Collaborative activities may include:
+- Sharing discovered clues.
+- Discussing story fragments.
+- Organising story events.
+- Developing a storytelling script.
+- Reviewing narration.
+- Preparing the final video.
+
+If real-time multiplayer requires additional infrastructure, identify the backend requirements and provide a realistic implementation plan.
+
+Do not present a simulated multiplayer feature as real multiplayer.
+
+---
+
+# 11. THREE ROLE-BASED PORTALS
+
+Create three separate access portals.
+
+## STUDENT PORTAL
+
+Students can:
+- Log in.
+- Select a character.
+- Enter the 3D kingdom.
+- Explore locations.
+- Complete missions.
+- View their mission journal.
+- View their progress.
+- Access the AI Mentor.
+- Record and review their voice.
+- Prepare their storytelling script.
+- Upload their final video.
+- View their achievements.
+- Access their digital portfolio.
+
+## TEACHER PORTAL
+
+Teachers can:
+- Log in securely.
+- Manage classes.
+- View student progress.
+- Review mission completion.
+- Review student scripts.
+- Listen to student recordings where authorised.
+- Review submitted videos.
+- Provide feedback.
+- Monitor learning improvement.
+- View achievement records.
+
+## ADMIN PORTAL
+
+Administrators can:
+- Manage user accounts.
+- Manage access roles.
+- Manage learning content.
+- Manage missions.
+- Manage game settings.
+- Manage system information.
+
+Use role-based access control.
+
+Do not allow students to access teacher or administrator functions.
+
+Do not use a fake login system that simply changes the interface without proper access control.
+
+If secure authentication requires an external backend, specify the required integration and provide an appropriate development structure.
+
+---
+
+# 12. LANGUAGE, NARRATION, MUSIC AND SOUND DESIGN
+
+All in-game dialogue, instructions, narration, mission descriptions, subtitles, feedback, and interface text must use:
+
+**BAHASA MELAYU MALAYSIA YANG BAKU, JELAS DAN SEMULA JADI.**
+
+This is a strict requirement.
+
+Do not use:
+- Bahasa Melayu Indonesia.
+- English slang.
+- Unnecessary English-Malay mixing.
+- Unnatural machine-translated sentences.
+- Unclear pronunciation.
+- Overly formal or difficult language that is unsuitable for school pupils.
+
+The narrator must sound clear, expressive, professional, and engaging.
+
+NPCs must have distinct dialogue and appropriate speaking styles while maintaining standard Bahasa Melayu Malaysia.
+
+Audio requirements:
+- Opening narration.
+- NPC dialogue.
+- Mission instructions.
+- Environmental ambience.
+- Royal fantasy background music.
+- Portal sound effects.
+- Mission completion sounds.
+- Achievement sounds.
+- Theatre presentation audio.
+
+Provide:
+- Play and pause controls.
+- Replay controls.
+- Volume adjustment.
+- Music mute option.
+- Dialogue subtitles.
+- Appropriate audio mixing.
+
+Lower background music volume during important dialogue.
+
+Do not rely on autoplay for essential narration. Start audio after the player interacts with the opening screen.
+
+If browser speech synthesis is used, test the available Bahasa Melayu Malaysia voice. If the voice is unsuitable, provide an integration point for properly generated Malay voice recordings.
+
+All important spoken instructions must also have readable subtitles.
+
+---
+
+# 13. FINAL ENDING: THE ROYAL STORYTELLER FESTIVAL
+
+After completing all five missions, the player returns to the Royal Citadel.
+
+The missing Royal Chronicles are restored.
+
+Show a cinematic sequence:
+1. The royal clock begins moving again.
+2. The historical paintings regain their colours.
+3. The library books recover their stories.
+4. The magical portals glow brightly.
+5. The kingdom returns to its original beauty.
+6. The Royal Festival of Light begins.
+
+The player enters the Grand Royal Theatre.
+
+The final digital storytelling video is presented.
+
+The Royal Guardian congratulates the heroes.
+
+Display:
+- Final mission completion.
+- Royal Story Fragments collected.
+- Achievements earned.
+- Learning progress.
+- Digital portfolio.
+- Completion certificate.
+
+End with a memorable cinematic scene of the kingdom celebrating the restored chronicles.
+
+The final message should emphasise that stories preserve knowledge, memories, values, and heritage.
+
+---
+
+# 14. USER INTERFACE AND GAME EXPERIENCE
+
+Design a premium fantasy RPG interface.
+
+Include:
+- Main title screen.
+- Start adventure button.
+- Character selection.
+- Mission journal.
+- World map.
+- Inventory or collected story fragments.
+- Mission progress.
+- Achievement screen.
+- Settings.
+- Audio settings.
+- Pause menu.
+- Return-to-citadel option.
+
+The UI should be visually integrated with the fantasy world.
+
+Use:
+- Elegant typography.
+- Readable text.
+- Smooth transitions.
+- Subtle animation.
+- Consistent icons.
+- Beautiful decorative borders.
+- Clear interaction prompts.
+
+Avoid overcrowding the screen.
+
+The player must always understand:
+- Where they are.
+- What their current mission is.
+- What they need to do next.
+- Which locations are unlocked.
+- How to interact with the environment.
+
+---
+
+# 15. EDUCATIONAL DESIGN AND ASSIGNMENT ALIGNMENT
+
+This game must function as a meaningful Digital Learning Object rather than merely an entertainment game.
+
+It must demonstrate:
+
+## Project-Based Learning (PBL)
+
+Students work towards a meaningful final product: a digital storytelling video.
+
+They progress through:
+1. Listening and understanding.
+2. Identifying story elements.
+3. Organising story events.
+4. Planning a storyline.
+5. Writing a storytelling script.
+6. Practising oral delivery.
+7. Improving their narration.
+8. Producing and presenting a digital storytelling video.
+
+## Authentic Learning
+
+The final video should have a meaningful purpose and audience.
+
+Students should be encouraged to produce a storytelling video that can be presented to classmates, teachers, or an appropriate learning community.
+
+## Adaptive Learning
+
+Activities, hints, and support should respond to student progress.
+
+## Gamification
+
+Use missions, exploration, rewards, achievements, story fragments, portals, and narrative progression to encourage meaningful participation.
+
+The educational activities must remain directly connected to the Assignment 2 storytelling project:
+
+**"Misi Menyelamatkan Taman Sekolah".**
+
+Do not replace this project with an unrelated storyline or final product.
+
+---
+
+# 16. QUALITY ASSURANCE AND FUNCTIONAL TESTING
+
+Before considering the game complete, test the following:
+
+### Gameplay
+- Can the player move the character?
+- Can the player walk and run?
+- Does the camera follow the character?
+- Can the player interact with objects?
+- Can the player interact with NPCs?
+- Do collision boundaries work?
+- Can the player enter portals?
+- Do portals load separate 3D environments?
+- Can the player return to the Royal Citadel?
+
+### Missions
+- Can all missions be started?
+- Can activities be completed?
+- Is progress recorded?
+- Are rewards issued correctly?
+- Does mission unlocking work?
+
+### Audio
+- Does narration play?
+- Are subtitles displayed?
+- Can the player replay dialogue?
+- Can the player adjust volume?
+- Does the microphone recording feature work when permission is granted?
+
+### User accounts
+- Do student, teacher, and admin roles have different access permissions?
+- Is student progress stored appropriately?
+- Can teachers review authorised submissions?
+
+### Performance
+- Are 3D scenes optimised?
+- Are character animations smooth?
+- Are loading transitions handled properly?
+- Does the game remain responsive?
+- Are there any major console errors?
+
+Do not mark incomplete features as finished.
+
+---
+
+# 17. DEVELOPMENT PRIORITIES AND IMPLEMENTATION ORDER
+
+Visual and gameplay quality are the main priorities.
+
+However, every visual element must support an actual game function.
+
+Develop the project in the following internal phases while maintaining one connected project:
+
+**PHASE 1 — CORE PLAYABLE 3D EXPERIENCE**
+- Main title screen.
+- Character selection.
+- Royal Citadel.
+- Controllable 3D character.
+- Third-person camera.
+- Walking, running, and interaction.
+- One fully functional portal.
+- One separate explorable 3D destination.
+- Working return portal.
+
+**PHASE 2 — WORLD EXPANSION**
+- Remaining four locations.
+- Distinct 3D environments.
+- Portal system.
+- NPC interactions.
+- Environmental exploration.
+- Mission journal.
+- World map.
+
+**PHASE 3 — LEARNING MISSIONS**
+- All five missions.
+- Interactive learning activities.
+- Story fragment collection.
+- Mission progression.
+- Rewards and achievements.
+
+**PHASE 4 — AI AND LEARNING SUPPORT**
+- Royal AI Mentor.
+- Language feedback.
+- Audio recording.
+- Speech-analysis integration.
+- Adaptive learning.
+- Improvement tracking.
+
+**PHASE 5 — FINAL EXPERIENCE**
+- Teacher and admin portals.
+- Digital portfolio.
+- Final video submission.
+- Grand Royal Theatre.
+- Royal Storyteller Festival.
+- Certificate.
+- Final testing and optimisation.
+
+These phases are development priorities, not separate projects. Keep all features within the same coherent application and architecture.
+
+If the full game cannot be generated in one response, begin by implementing a working Phase 1 rather than generating a large collection of incomplete screens.
+
+After Phase 1 works, continue expanding the same project without removing or breaking previously implemented features.
+
+---
+
+# 18. FINAL CREATIVE DIRECTION
+
+The final result should feel like a premium fantasy adventure game that students genuinely want to explore.
+
+The player should feel as though they are entering a magical kingdom, not opening an ordinary educational website.
+
+The game must combine:
+- Immersive 3D exploration.
+- Playable characters.
+- Real movement and animations.
+- Physical teleportation between locations.
+- Mystery-based storytelling.
+- Meaningful mission progression.
+- Interactive educational activities.
+- AI-supported improvement.
+- Individual and collaborative learning.
+- A memorable cinematic ending.
+
+**DO NOT COMPROMISE THE CORE GAMEPLAY.**
+
+A beautiful static 3D world is not sufficient.
+
+A functional educational dashboard is not sufficient.
+
+A series of clickable backgrounds is not sufficient.
+
+The final product must be a genuinely playable 3D browser game with moving characters, interactive environments, separate explorable locations, working portals, meaningful missions, and a coherent educational storyline.
+
+Begin development now. First establish the technical architecture, then implement a visually polished and fully playable 3D vertical slice. Prioritise a reliable playable experience and progressively expand the complete Kingdom of Stories world.

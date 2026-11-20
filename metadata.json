@@ -1,0 +1,6 @@
+{
+  "name": "Kingdom of Stories: The Veil of Forgotten Chronicles",
+  "description": "Permainan pengembaraan pendidikan 3D interaktif berasaskan penceritaan digital dan pembelajaran berasaskan projek dalam Bahasa Melayu Malaysia.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
